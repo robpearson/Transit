@@ -2,7 +2,7 @@
 using MaplePixel.Transit.Controllers;
 using NUnit.Framework;
 
-namespace MaplePixel.Transit.Tests
+namespace MaplePixel.Transit.Tests.Controllers
 {
     [TestFixture]
     public class TransitRouteControllerFixture
@@ -14,6 +14,7 @@ namespace MaplePixel.Transit.Tests
             var controller = new TransitRouteController();
             var allRoutes = controller.Get().ToList();
 
+            // Then
             Assert.That(allRoutes, Has.Count.GreaterThan(0));
         }
 
@@ -27,6 +28,7 @@ namespace MaplePixel.Transit.Tests
             var controller = new TransitRouteController();
             var route = controller.Get(id);
 
+            // Then
             Assert.That(route.Id, Is.EqualTo(1));
             Assert.That(route.LongName, Is.EqualTo("Caboolture Line"));
             Assert.That(route.ShortName, Is.EqualTo("CAB"));

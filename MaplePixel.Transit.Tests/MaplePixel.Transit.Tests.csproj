@@ -58,6 +58,7 @@
   <ItemGroup>
     <Compile Include="Controllers\Repositories\TransitRouteRepositoryFixture.cs" />
     <Compile Include="Controllers\Repositories\TransitTripRepositoryFixture.cs" />
+    <Compile Include="Controllers\TransitTripControllerFixture.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Controllers\TransitRouteControllerFixture.cs" />
   </ItemGroup>
